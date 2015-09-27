@@ -1,7 +1,7 @@
 
 <h1>CodeBook</h1>
 
-This is a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data.
+This is the code book that describes the variables, the data, and any transformations or work that is performed to clean up the data.
 
 <h2>The data source</h2>
 
@@ -31,15 +31,17 @@ The dataset includes the following files:
 
 'train/y_train.txt': Training labels.
 
+'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample in the train dataset. Its range is from 1 to 30.
+
 'test/X_test.txt': Test set.
 
 'test/y_test.txt': Test labels.
 
+'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample in the test dataset. Its range is from 1 to 30.
+
 The following files are available for the train and test data. Their descriptions are equivalent.
 
-'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
-'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis
 
 
 <h2>Process Raw Data Details</h2>
