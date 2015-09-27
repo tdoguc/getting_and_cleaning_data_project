@@ -1,6 +1,5 @@
 
 run_analysis<-function(){
-  #setwd("~/R Files/Project Data Cleaning/UCI HAR Dataset")
   features<-read.table("features.txt", sep=NULL, header=F)
   features<-features[,2]
   
@@ -50,8 +49,6 @@ run_analysis<-function(){
   mynames<-names(alldataset)
   mynames<-stri_replace_all_fixed(mynames,"-","_")
   mynames<-stri_replace_all_fixed(mynames,"()","")
-  #mynames<-stri_replace_first(mynames,replacement = "time_",fixed = "t")
-  #mynames<-stri_replace_first(mynames,replacement = "frequency_",fixed = "f")
   mynames<-tolower(mynames)
   names(alldataset)<-mynames
   #STEP4  
