@@ -19,4 +19,4 @@ Download the data source and put into a folder on your local drive. You'll have 
 
 Run source("run_analysis.R"), then it will generate a new file gettingandcleaningdata_project.txt in your working directory
 
-Dependent Libraries: "stringi", "dplyr"
+<b>Dependent Libraries:</b> "stringi", "dplyr"
