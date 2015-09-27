@@ -12,7 +12,7 @@ Appropriately labels the data set with descriptive activity names.<br>
 Creates a second, independent tidy data set with the average of each variable for each activity and each subject.<br><br>
 
 
-<h2>Reproducing Data Manual;</h2>
+<h2>Manual (Reproducing Data) </h2>
 
 Download the data source and put into a folder on your local drive. You'll have a UCI HAR Dataset folder.
 <br><br>Put run_analysis.R under thefolder of UCI HAR Dataset, then set your working directory to sub directory under UCI HAR Dataset using setwd() function in RStudio. Ex: setwd("~/R Files/UCI HAR Dataset")
