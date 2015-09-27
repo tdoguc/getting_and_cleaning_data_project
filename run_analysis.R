@@ -49,11 +49,16 @@ run_analysis<-function(){
   mynames<-names(alldataset)
   mynames<-stri_replace_all_fixed(mynames,"-","_")
   mynames<-stri_replace_all_fixed(mynames,"()","")
+  #mynames<-stri_replace_first(mynames,replacement = "time_",fixed = "t")
+  #mynames<-stri_replace_first(mynames,replacement = "frequency_",fixed = "f")
   mynames<-tolower(mynames)
   names(alldataset)<-mynames
   #STEP4  
 
   #STEP5
+  library(dplyr)
   tidydataset<-group_by(alldataset, activity_label, id) %>% summarise_each(c("mean"))
+  write.table(tidydataset,file="gettingandcleaningdata_project.txt",row.names = FALSE)
+  tidydataset
   #STEP5  
 }
